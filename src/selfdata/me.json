@@ -1,0 +1,19 @@
+{
+  "personal_data": {
+    "name": "Ali Sen",
+    "email": "hello@alisen.me",
+    "typed_texts": [
+      "a Frontend Developer",
+      "a Backend Developer",
+      "a Fullstack Developer",
+      "a Freelancer",
+      "a Gamer"
+    ]
+  },
+  "social_media": {
+    "github": "https://github.com/alikdb",
+    "twitter": "https://twitter.com/aali_senn",
+    "instagram": "https://instagram.com/alisen.js",
+    "linkedin": "https://www.linkedin.com/in/mr-ali-sen/"
+  }
+}
