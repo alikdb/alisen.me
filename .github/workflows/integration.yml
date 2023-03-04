@@ -8,6 +8,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
       - name: Install NPM dependencies
-        run: npm install
+        run: npm install --force
       - name: Build project assets
         run: npm run build
