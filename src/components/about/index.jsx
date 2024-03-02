@@ -43,7 +43,7 @@ const AboutComponent = () => {
                         </h1>
                         <div className="grid gap-4">
                             <div className="sm:max-w-md">
-                                I`m a Front End Engineer based in Barcelona. I <Link
+                                I`m a Full-Stack Developer based in Antalya. I <Link
                                 href="https://github.com/alikdb" className="underline-offset-2 underline"
                                 target="_blank">code</Link>, <Link
                                 href="/writing" className="underline-offset-2 underline"

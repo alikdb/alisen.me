@@ -1,4 +1,4 @@
-import {BeanIcon, BookOpenIcon} from "lucide-react";
+import {BeanIcon, BookOpenIcon, XIcon, Github} from "lucide-react";
 
 const menus = [{
     title: 'About',
@@ -9,4 +9,14 @@ const menus = [{
     to: '/writing',
     icon: <BookOpenIcon size={17}/>
 }]
-export {menus}
+
+const socials = [{
+    title: 'X',
+    to: 'https://x.com/alisen_js',
+    icon: <XIcon size={24}/>
+}, {
+    title: 'Github',
+    to: 'https://github.com/alikdb',
+    icon: <Github size={24}/>
+}]
+export {menus, socials}
