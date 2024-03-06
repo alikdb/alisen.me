@@ -22,7 +22,7 @@ const AboutComponent = () => {
 
     return (
         <Section>
-            <div className="container max-w-4xl mx-auto px-6">
+            <div>
                 <div className="flex text-sm lowercase opacity-60">
                     <time className="block w-[62px] whitespace-nowrap">
                         {time}
