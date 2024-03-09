@@ -10,5 +10,27 @@ const fetchGraphQL = async (query, preview = isDevelopment) => {
         body: JSON.stringify({query}),
     })
     if (!res.ok) return undefined
+
     return res.json()
 }
+
+export const getAllWritings = async (preview = isDevelopment) => {
+    const result = await fetchGraphQL(
+        `query {
+              writingCollection(preview: ${isDevelopment}) {
+                items {
+                  title,
+                  slug,
+                  date,
+                  sys {
+                    firstPublishedAt
+                    publishedAt
+                  }
+                }
+              }  
+            }`, preview);
+
+    return result?.data?.writingCollection?.items ?? [];
+
+}
+
