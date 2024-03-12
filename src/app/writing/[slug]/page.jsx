@@ -1,11 +1,23 @@
-'use client'
+import {getWriting} from "@/libs/contentful";
+import {notFound} from "next/navigation";
+import {isDevelopment} from "@/libs/utils";
+import Section from "@/components/section";
+import {RichText} from "@/components/contentful/rich-text";
 
-const WritingPage = ({params}) => {
-    const slug = params.slug;
+const fetchData = async (slug) => {
+    const data = await getWriting(slug, isDevelopment)
+    if (!data) notFound()
+    return data
+}
+
+const WritingPage = async ({params}) => {
+    const w = await fetchData(params.slug)
     return (
-        <div>
-            {slug}
-        </div>
+        <Section>
+            {w.title} <br/>
+            <RichText content={w.content}/>
+        </Section>
     );
 }
+
 export default WritingPage;

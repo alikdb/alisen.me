@@ -6,3 +6,5 @@ export const cn = (...args) => {
 }
 
 export const isDevelopment = process.env.NODE_ENV === 'development';
+
+export const dasherize = (text) => String(text).replace(/ +/g, '-').toLowerCase()

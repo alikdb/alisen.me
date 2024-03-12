@@ -31,6 +31,57 @@ export const getAllWritings = async (preview = isDevelopment) => {
             }`, preview);
 
     return result?.data?.writingCollection?.items ?? [];
-
 }
 
+export const getWriting = async (slug, preview = isDevelopment) => {
+    const result = await fetchGraphQL(
+        `query {
+              writingCollection(where: {slug: "${slug}"}, preview: ${preview}, limit: 1) {
+                items {
+                  title,
+                  slug,
+                  seo {
+                    title,
+                    description,
+                    image {
+                      width, 
+                      height,
+                      url
+                    }
+                  }
+                     content {
+                        json
+                        links {
+                          assets {
+                            block {
+                              sys {
+                                id
+                              }
+                              url
+                              title
+                              width
+                              height
+                              description
+                            }
+                          }
+                          entries {
+                            inline {
+                              sys {
+                                id
+                              }
+                              __typename 
+                              ... on CodeBlock {
+                                title
+                                code
+                              } 
+                            }
+                          }
+                        }
+                      }
+                }
+              }
+            }`
+        , isDevelopment)
+    return result?.data?.writingCollection?.items[0];
+
+}
