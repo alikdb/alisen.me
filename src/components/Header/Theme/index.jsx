@@ -1,9 +1,6 @@
 "use client";
 import { MoonStar, Sun } from "lucide-react";
 const Theme = () => {
-  localStorage.setItem("theme", "dark");
-  document.documentElement.classList.add("dark");
-
   /*
   const [theme, setTheme] = useState("light");
   const clickHandler = () => {
