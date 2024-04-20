@@ -1,19 +1,20 @@
-import { Sun } from "lucide-react";
+import Link from "next/link";
 import Container from "../Container";
 import Divide from "../Divide";
 import Navbar from "./Navbar";
 import SocialSide from "./SocialSide";
+import Theme from "./Theme";
 const Header = () => {
   return (
     <Container margin={true}>
       <div className="flex flex-col gap-y-5">
         <div className="flex justify-between">
           <div>
-            <span className="text-3xl font-bold text-white">Ali Şen</span>
+            <Link href={"/"}>
+              <span className="text-3xl font-bold text-white">Ali Şen</span>
+            </Link>
           </div>
-          <div>
-            <Sun size={30} className="cursor-pointer" />
-          </div>
+          <Theme />
         </div>
         <div className="flex justify-between">
           <Navbar />

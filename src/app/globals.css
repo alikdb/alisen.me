@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 body {
-  @apply text-gray-400 bg-gray-900;
+  @apply dark:text-gray-400 dark:bg-gray-900;
 }
 
 .container {
