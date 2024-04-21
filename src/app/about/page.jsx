@@ -20,7 +20,7 @@ const About = () => {
         <br />
         <p>Here&apos;s a little bit of my history:</p>
         <br />
-        <ul>
+        <ul className="ml-5 list-disc">
           <li>
             Software Developer -{" "}
             <Link href="https://bulutsoft.com.tr" className="text-purple-400">

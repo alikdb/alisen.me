@@ -1,7 +1,7 @@
 import { email } from "@/utils/constants";
 import Link from "next/link";
 import Page from "../Page";
-const Home = () => {
+const Home = async () => {
   return (
     <Page title={"Hi there!"}>
       <p className="text-xl">

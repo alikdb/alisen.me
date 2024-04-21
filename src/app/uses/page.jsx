@@ -1,5 +1,6 @@
-const Uses = () => {
-  return <>Uses</>;
+import UsesComponent from "@/components/Uses";
+const UsesPage = () => {
+  return <UsesComponent />;
 };
 
-export default Uses;
+export default UsesPage;
