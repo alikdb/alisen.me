@@ -27,4 +27,49 @@ const navItems = [
   },
 ];
 
-export { email, navItems, socialMedias };
+const uses = {
+  items: [
+    {
+      name: 'Macbook Pro 13" 2020',
+      description: "My daily driver for development and personal use.",
+    },
+    {
+      name: "Apple Magic Pad Black",
+      description: "For gestures and scrolling.",
+    },
+    {
+      name: "Keychorn K2",
+      description: "My favorite mechanical keyboard.",
+    },
+  ],
+  apps: [
+    {
+      name: "Visual Studio Code",
+      description: "My favorite code editor.",
+    },
+
+    {
+      name: "MonoLisa",
+      description: "My favorite font for coding.",
+      link: "https://www.monolisa.dev/",
+    },
+    {
+      name: "Tableplus",
+      description: "Database management tool.",
+    },
+    {
+      name: "iTerm2",
+      description: "Terminal replacement for MacOS.",
+    },
+    {
+      name: "Httpie",
+      description: "Command line HTTP client.",
+    },
+    {
+      name: "OrbStack",
+      description: "Docker alternative for MacOS.",
+    },
+  ],
+};
+
+export { email, navItems, socialMedias, uses };

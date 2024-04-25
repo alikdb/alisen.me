@@ -40,4 +40,11 @@ const About = () => {
     </Page>
   );
 };
+
+export const generateMetadata = () => {
+  return {
+    title: "About - alisen.me",
+    description: "Software Developer.",
+  };
+};
 export default About;

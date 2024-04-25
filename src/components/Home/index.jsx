@@ -36,5 +36,4 @@ const Home = async () => {
     </Page>
   );
 };
-
 export default Home;
