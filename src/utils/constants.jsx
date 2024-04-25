@@ -62,7 +62,7 @@ const uses = {
       description: "Terminal replacement for MacOS.",
     },
     {
-      name: "Httpie",
+      name: "HTTPie",
       description: "Command line HTTP client.",
     },
     {

@@ -5,7 +5,6 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 const Navbar = () => {
   const pathname = usePathname();
-  console.log(pathname);
   return (
     <div>
       <ul className="flex text-lg gap-x-5">
