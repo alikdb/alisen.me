@@ -7,12 +7,12 @@ const socialMedias = [
   },
   {
     name: "Linkedin",
-    to: "https://www.linkedin.com/in/alikdb/",
+    to: "https://www.linkedin.com/in/mr-ali-sen/",
     icon: <Linkedin strokeWidth={1.3} />,
   },
   {
     name: "Instagram",
-    to: "https://www.instagram.com/alikdb/",
+    to: "https://www.instagram.com/alisen.js/",
     icon: <Instagram />,
   },
   {

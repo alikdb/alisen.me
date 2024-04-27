@@ -1,8 +1,9 @@
+import SocialSide from "@/components/Header/SocialSide";
 import Page from "@/components/Page";
 import Link from "next/link";
 const About = () => {
   return (
-    <Page title="About Me">
+    <Page title="About Me" className="pb-16">
       <div className="text-base md:text-lg">
         <p>
           Experienced software developer with four years of expertise in web,
@@ -22,20 +23,31 @@ const About = () => {
         <br />
         <ul className="ml-5 list-disc">
           <li>
-            Software Developer -{" "}
-            <Link href="https://bulutsoft.com.tr" className="text-purple-400">
+            Fullstack Developer -{" "}
+            <Link
+              href="https://bulutsoft.com.tr"
+              target="_blank"
+              className="text-purple-400"
+            >
               Bulutsoft
             </Link>{" "}
             (Jun 2022 - Present)
           </li>
           <li>
-            Software Developer -{" "}
-            <Link href="https://waxajans.com" className="text-purple-400">
+            PHP Developer -{" "}
+            <Link
+              href="https://waxajans.com"
+              target="_blank"
+              className="text-purple-400"
+            >
               Wax Ajans
             </Link>{" "}
             (Sep 2021 - Jun 2022)
           </li>
         </ul>
+        <div className="flex mt-8">
+          <SocialSide />
+        </div>
       </div>
     </Page>
   );

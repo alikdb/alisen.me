@@ -11,10 +11,7 @@ const UsesComponent = () => {
         className="object-cover w-2/3 rounded-lg snap-center md:w-full md:snap-align-none"
         width={756}
         height={1008}
-        loading="eager"
-        placeholder="blur"
-        blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAACCAYAAAB/qH1jAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAJ0lEQVR4nGPY2fXjv458/H9Bbtf/IDbD/7v//8/Mvfq/J+nEfxAbAF3NFsFiuaE1AAAAAElFTkSuQmCC"
-        priority
+        loading="lazy"
       />
       <h2 className="mt-8 text-lg font-bold text-white md:text-2xl">
         Hardware
