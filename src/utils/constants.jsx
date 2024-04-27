@@ -1,4 +1,4 @@
-import { Github, Linkedin } from "lucide-react";
+import { Github, Instagram, Linkedin, Mail } from "lucide-react";
 const socialMedias = [
   {
     name: "Github",
@@ -9,6 +9,16 @@ const socialMedias = [
     name: "Linkedin",
     to: "https://www.linkedin.com/in/alikdb/",
     icon: <Linkedin strokeWidth={1.3} />,
+  },
+  {
+    name: "Instagram",
+    to: "https://www.instagram.com/alikdb/",
+    icon: <Instagram />,
+  },
+  {
+    name: "Mail",
+    to: "mailto:hello@alisern.me",
+    icon: <Mail />,
   },
 ];
 const email = "hello@alisen.me";
@@ -25,6 +35,13 @@ const navItems = [
     name: "Uses",
     to: "/uses",
   },
+  /*
+  {
+    name: "Bookmarks",
+    to: "/bookmarks",
+    disabled: true,
+  },
+  */
 ];
 
 const uses = {

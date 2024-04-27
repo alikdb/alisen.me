@@ -16,7 +16,7 @@ const Header = () => {
           </div>
           <Theme />
         </div>
-        <div className="flex justify-between">
+        <div className="flex md:justify-between">
           <Navbar />
           <SocialSide />
         </div>

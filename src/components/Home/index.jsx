@@ -4,7 +4,7 @@ import Page from "../Page";
 const Home = async () => {
   return (
     <Page title={"Hi there!"}>
-      <p className="text-xl">
+      <p className="text-base md:text-xl">
         Software Developer at{" "}
         <Link
           className="text-purple-400"
@@ -14,7 +14,7 @@ const Home = async () => {
           @bulutsoft
         </Link>
       </p>
-      <p className="mt-3 text-xl">
+      <p className="mt-3 text-base md:text-xl">
         Previously I`ve been in Developer at{" "}
         <Link
           className="text-purple-400"
@@ -24,7 +24,7 @@ const Home = async () => {
           @waxajans
         </Link>
       </p>
-      <p className="mt-3 text-xl">
+      <p className="mt-3 text-base md:text-xl">
         <Link className="text-purple-400" href="/about">
           Learn more
         </Link>{" "}

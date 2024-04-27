@@ -3,7 +3,7 @@ import Link from "next/link";
 const About = () => {
   return (
     <Page title="About Me">
-      <div className="text-lg">
+      <div className="text-base md:text-lg">
         <p>
           Experienced software developer with four years of expertise in web,
           mobile, and backend applications. I am the go-to person for ReactJS,
