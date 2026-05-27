@@ -11,20 +11,19 @@ export const config = {
 };
 
 export default async function handler(req, res) {
-  const path = req.query.path.join("/");
-  const body = req.method === "POST" ? await readBody(req) : undefined;
+  const body = await readBody(req);
 
-  const response = await fetch(`https://accounts.spotify.com/${path}`, {
-    method: req.method,
+  const response = await fetch("https://accounts.spotify.com/api/token", {
+    method: "POST",
     headers: {
       "Content-Type": req.headers["content-type"] || "application/x-www-form-urlencoded",
       Authorization: req.headers.authorization || "",
     },
-    ...(body ? { body } : {}),
+    body,
   });
 
   const data = await response.text();
   res.status(response.status);
-  res.setHeader("Content-Type", response.headers.get("content-type") || "application/json");
+  res.setHeader("Content-Type", "application/json");
   res.send(data);
 }
