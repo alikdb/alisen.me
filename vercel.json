@@ -1,16 +1,16 @@
 {
-  "builds": [
+  "rewrites": [
     {
-      "src": "api/**/*.js",
-      "use": "@vercel/node"
+      "source": "/api/spotify-auth/:path*",
+      "destination": "https://accounts.spotify.com/:path*"
     },
     {
-      "src": "package.json",
-      "use": "@vercel/static-build",
-      "config": {
-        "buildCommand": "npm run build",
-        "outputDirectory": "dist"
-      }
+      "source": "/api/spotify/:path*",
+      "destination": "https://api.spotify.com/v1/:path*"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
     }
   ]
 }
