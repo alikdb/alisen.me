@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(yarn dev *)",
+      "Bash(npm run *)",
+      "WebFetch(domain:localhost)",
+      "Bash(curl -s http://localhost:5173/)",
+      "Bash(curl -s http://localhost:5173/src/home.jsx)",
+      "Bash(chmod +x *)",
+      "Bash(curl *)",
+      "Bash(yarn add *)",
+      "Bash(yarn test *)"
+    ]
+  }
+}
